@@ -1,0 +1,8 @@
+---
+  - name: Deploy polkadot nodes
+    hosts: "nodes"
+    become: yes
+    roles:
+     - 'polkadot-node'
+     - 'monitoring'
+
